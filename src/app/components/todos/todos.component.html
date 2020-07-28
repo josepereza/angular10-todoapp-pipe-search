@@ -1,0 +1,9 @@
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<input type="text" class="form-control" placeholder="Search" [(ngModel)]="query" id="listSearch">
+
+<todo-item  
+  *ngFor="let element of todo | search:query"
+  [element]="element"
+  (deleteTodo)="deleteTodo($event)"
+>
+</todo-item>
