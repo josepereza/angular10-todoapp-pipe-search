@@ -13,7 +13,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EditarComponent } from './components/editar/editar.component';
 import {  ReactiveFormsModule } from '@angular/forms';
-import { SearchPipe } from './search.pipe';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
